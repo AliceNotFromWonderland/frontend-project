@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/fonts/Lato/lato-display.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Vite App</title>
 
     <style media="(prefers-color-scheme: light)">
@@ -13,8 +15,456 @@
       @import url('./src/styles/colors/dark.css');
     </style>
   </head>
+
   <body>
+    <div class="top-section">
+      <div class="top-section__background">
+        <img src="/images/top-bg.svg" alt="" class="top-section__bg-image" />
+      </div>
+
+      <header class="header">
+        <div class="container">
+          <div class="header__content">
+            <div class="header__left">
+              <a href="#" class="header__logo">
+                <img src="/images/logo.svg" alt="CREATEX" class="header__logo-image" />
+              </a>
+              <nav class="header__nav">
+                <ul class="header__nav-list">
+                  <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">
+                      Services
+                      <img src="/images/Down chevron.svg" alt="" class="header__nav-arrow" />
+                    </a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">Case Studies</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">About Us</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">Blog</a>
+                  </li>
+                  <li class="header__nav-item">
+                    <a href="#" class="header__nav-link">Contacts</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class="header__right">
+              <div class="theme-switcher">
+                <input type="checkbox" id="theme-toggle" class="theme-switcher__input" />
+                <label for="theme-toggle" class="theme-switcher__label">
+                  <span class="theme-switcher__slider"></span>
+                </label>
+              </div>
+              <button class="button header__button">Talk to a human</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="intro">
+        <div class="container">
+          <div class="intro__content">
+            <div class="intro__location">
+              <a href="#" class="intro__home">
+                <img src="/images/home-icon.svg" alt="Home" class="intro__home-icon" />
+              </a>
+              <img src="/images/arrow-right1.svg" alt="" class="intro__arrow" />
+              <span class="intro__page">Services</span>
+            </div>
+            <h1 class="intro__title">Our services</h1>
+            <p class="intro__description">
+              We offer more than services. Our agency provides solutions to your top-priority concerns, involving
+              customer targeting, email performance and sales growth. If there is no existing solution readily
+              available, we create one, specifically to suit your business.
+            </p>
+            <div class="intro__actions">
+              <button class="intro__button">Start now</button>
+              <div class="intro__contact">
+                <img src="/images/iPhone.svg" alt="Phone" class="intro__contact-icon" />
+                <div class="intro__contact-info">
+                  <span class="intro__contact-label">Call us</span>
+                  <a href="tel:4055550128" class="intro__contact-phone">(405) 555-0128</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="service-card">
+      <div class="service-card__container">
+        <div class="service-card__content">
+          <h2 class="service-card__title">Social Media Marketing</h2>
+          <p class="service-card__description">
+            Elef fend orci massa et facilisis orci feugiat ac. Conque in ut lacus, turpis accumsan gravida. Aliquet
+            mattis dignissim massa sociis a, id bibendum. Egestas lorem eros, mi cras amet, vel eget molestie. Turpis
+            enim arcu, amet donec massa pellentesque nulla duis. Arcu dictum metus sed purus senectus faucibus eget
+            elementum pretium.
+          </p>
+          <div class="service-card__actions">
+            <button class="service-card__button service-card__button--outline">Learn more</button>
+            <button class="button service-card__button service-card__button--filled">Try SEO toolkit</button>
+          </div>
+        </div>
+        <div class="service-card__media">
+          <img src="/images/service-1-main.svg" alt="Social Media Marketing" class="service-card__image-main" />
+          <img src="/images/service-1-bg.svg" alt="" class="service-card__image-bg" />
+        </div>
+      </div>
+    </section>
+
+    <section class="service-card service-card--reverse">
+      <div class="service-card__container">
+        <div class="service-card__content">
+          <h2 class="service-card__title">Search Engine Optimization</h2>
+          <p class="service-card__description">
+            Elementum ipsum lorem tortor morbi quis turpis pellentesque ultrices aenean. Lacus sit viverra et egestas
+            nisl vitae lacus, eget. Eu pulvinar duis in posuere non adipiscing. Nunc, tristique viverra tincidunt nec
+            proin tempus egestas massa. Quis velit nunc nisl sem in tristique.
+          </p>
+          <div class="service-card__actions">
+            <button class="service-card__button service-card__button--outline">Learn more</button>
+            <button class="button service-card__button service-card__button--filled">Try toolkit</button>
+          </div>
+        </div>
+        <div class="service-card__media">
+          <img src="/images/service-2-main.svg" alt="" class="service-card__image-main" />
+          <img src="/images/service-2-bg.svg" alt="" class="service-card__image-bg" />
+        </div>
+      </div>
+    </section>
+
+    <section class="service-card">
+      <div class="service-card__container">
+        <div class="service-card__content">
+          <h2 class="service-card__title">Research Service</h2>
+          <p class="service-card__description">
+            Volutpat tellus mauris sit sit. Posuere ut sit vestibulum amet viverra in. Est nulla lectus purus tincidunt
+            massa tortor. Hendrerit vulputate elementum blandit massa vitae amet felis eget.
+          </p>
+          <div class="service-card__actions">
+            <button class="service-card__button service-card__button--outline">Learn more</button>
+            <button class="button service-card__button service-card__button--filled">Try SEO toolkit</button>
+          </div>
+        </div>
+        <div class="service-card__media">
+          <img src="/images/service-3-main.svg" alt="Social Media Marketing" class="service-card__image-main" />
+          <img src="/images/service-3-bg.svg" alt="" class="service-card__image-bg" />
+        </div>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <div class="form-section__background">
+        <img src="/images/form-bg.svg" alt="" class="form-section__bg-image" />
+      </div>
+      <div class="form-section__container">
+        <div class="form-section__media">
+          <img src="/images/form-image.svg" alt="SEO Analysis" class="form-section__image" />
+        </div>
+        <div class="form-section__content">
+          <h1 class="form-section__title">Get a Free SEO Analysis!</h1>
+          <form class="form-section__form">
+            <div class="form-section__row">
+              <div class="form-section__field">
+                <label class="form-section__label">Name</label>
+                <input type="text" class="form-section__input" placeholder="Your name" />
+              </div>
+              <div class="form-section__field">
+                <label class="form-section__label">Email</label>
+                <input type="email" class="form-section__input" placeholder="Your working email" />
+              </div>
+            </div>
+            <div class="form-section__field">
+              <label class="form-section__label">Your website URL</label>
+              <input type="url" class="form-section__input" placeholder="http://yoursite.com" />
+            </div>
+            <div class="form-section__footer">
+              <div class="form-section__checkbox">
+                <input type="checkbox" id="agreement" checked />
+                <label for="agreement" class="form-section__checkbox-label">
+                  I agree to receive communications from Createx SEO Agency
+                </label>
+              </div>
+              <button type="submit" class="button form-section__submit">Get a free analysis</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="markets">
+      <div class="markets__container">
+        <h1 class="markets__title">Markets in which we operate</h1>
+        <div class="markets__row">
+          <div class="markets__item">
+            <img src="/images/market-ecommerce.svg" alt="E-commerce" class="markets__icon" />
+            <div class="markets__content">
+              <h3 class="markets__subtitle">E-commerce Websites</h3>
+              <p class="markets__description">Aenean urma dictum adipiscing nec, cras quisque. Nunc in mauris.</p>
+            </div>
+          </div>
+          <img src="/images/divider-line.svg" alt="" class="markets__divider" />
+          <div class="markets__item">
+            <img src="/images/market-content.svg" alt="Content-rich" class="markets__icon" />
+            <div class="markets__content">
+              <h3 class="markets__subtitle">Content-rich Websites</h3>
+              <p class="markets__description">Culpa nostrud commodo ea consequat reprehenderit aliquip.</p>
+            </div>
+          </div>
+          <img src="/images/divider-line.svg" alt="" class="markets__divider" />
+          <div class="markets__item">
+            <img src="/images/market-b2b.svg" alt="B2B/B2C" class="markets__icon" />
+            <div class="markets__content">
+              <h3 class="markets__subtitle">B2B / B2C Services</h3>
+              <p class="markets__description">Viverra scelerisque consequat net. Adipiscing esse consequat.</p>
+            </div>
+          </div>
+          <img src="/images/divider-line.svg" alt="" class="markets__divider" />
+          <div class="markets__item">
+            <img src="/images/market-startup.svg" alt="Startup" class="markets__icon" />
+            <div class="markets__content">
+              <h3 class="markets__subtitle">Startup Projects</h3>
+              <p class="markets__description">Aute elusmod dolore dolore deserunt veniam ad deserunt.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-studies">
+      <div class="case-studies__container">
+        <div class="case-studies__header">
+          <h1>Read our clients' case studies</h1>
+          <div class="case-studies__controls">
+            <button class="case-studies__arrow case-studies__arrow--left">
+              <img
+                src="images/arrow-left-dark.svg"
+                alt="Previous"
+                class="case-studies__arrow-icon case-studies__arrow-icon--dark"
+              />
+              <img
+                src="images/arrow-left-light.svg"
+                alt="Previous"
+                class="case-studies__arrow-icon case-studies__arrow-icon--light"
+              />
+            </button>
+            <button class="case-studies__arrow case-studies__arrow--right">
+              <img src="images/arrow-right-light.svg" alt="Next" class="case-studies__arrow-icon" />
+            </button>
+          </div>
+        </div>
+        <div class="case-studies__grid">
+          <div class="case-study-card">
+            <img src="images/case-national.png" alt="NATIONAL case study" class="case-study-card__image" />
+          </div>
+          <div class="case-study-card">
+            <img src="images/case-oil.png" alt="Oil and natural resources case study" class="case-study-card__image" />
+          </div>
+          <div class="case-study-card">
+            <img src="images/case-personal-care.png" alt="Personal care case study" class="case-study-card__image" />
+          </div>
+        </div>
+        <div class="case-studies__footer">
+          <h3 class="case-studies__footer-title">Explore more case studies</h3>
+          <button class="button studies__button">View all case studies</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="partners">
+      <div class="partners__container">
+        <div class="partners__grid">
+          <img src="images/partner-1.svg" alt="Partner 1" class="partner-logo" />
+          <img src="images/partner-2.svg" alt="Partner 2" class="partner-logo" />
+          <img src="images/partner-3.svg" alt="Partner 3" class="partner-logo" />
+          <img src="images/partner-4.svg" alt="Partner 4" class="partner-logo" />
+          <img src="images/partner-5.svg" alt="Partner 5" class="partner-logo" />
+          <div class="partner-logo-wrapper">
+            <img src="images/partner-6.svg" alt="Partner 6" class="partner-logo" />
+            <img src="images/cursor-arrow.svg" alt="" class="partner-cursor" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="latest-news">
+      <div class="latest-news-container">
+        <div class="news-header">
+          <h1>Latest news</h1>
+          <p class="news-subtitle">Check more posts in our blog for featured news and advertising insights</p>
+          <button class="button news__button">Go to blog</button>
+        </div>
+
+        <article class="news-card">
+          <img
+            src="images/news-1.svg"
+            alt="How to Maximize Your ROI Through Scientific SEM?"
+            class="news-card__image"
+            width="390"
+            height="300"
+          />
+          <div class="news-card__meta">
+            <span class="news-category">SEO</span>
+            <span class="news-date">
+              <img src="images/calendar-icon.svg" alt="" class="meta-icon" />
+              July 5, 2020
+            </span>
+            <span class="news-author">
+              <img src="images/user-icon.svg" alt="" class="meta-icon" />
+              By Diane McCoy
+            </span>
+          </div>
+          <h3 class="news-card__title">How to Maximize Your ROI Through Scientific SEM?</h3>
+          <p class="news-card__excerpt">
+            Vulputate vitae pellentesque scelerisque luctus consequat mattis pellentesque dui odio...
+          </p>
+          <a href="#" class="news-card__link">
+            Read more
+            <img src="images/arrow-right.svg" alt="" class="news-card__arrow" />
+          </a>
+        </article>
+
+        <article class="news-card">
+          <img
+            src="images/news-2.svg"
+            alt="The Basics of Blogging Search Engine Optimization."
+            class="news-card__image"
+            width="390"
+            height="300"
+          />
+          <div class="news-card__meta">
+            <span class="news-category">Marketing</span>
+            <span class="news-date">
+              <img src="images/calendar-icon.svg" alt="" class="meta-icon" />
+              July 5, 2020
+            </span>
+            <span class="news-author">
+              <img src="images/user-icon.svg" alt="" class="meta-icon" />
+              By Diane McCoy
+            </span>
+          </div>
+          <h3 class="news-card__title">The Basics of Blogging Search Engine Optimization.</h3>
+          <p class="news-card__excerpt">
+            Mauris tincidunt sollicitudin tristique odio eget volutpat. Fringilla viverra amet, mi interdum blandit...
+          </p>
+          <a href="#" class="news-card__link">
+            Read more
+            <img src="images/arrow-right.svg" alt="" class="news-card__arrow" />
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__main">
+          <div class="footer__about">
+            <img src="images/logo.svg" alt="CREATEX" class="footer__logo" width="130" height="22" />
+            <p class="footer__description">
+              Createx SEO Agency is a full-service digital marketing agency. We help businesses make more money through
+              a wealth of performance data and market research. We create science-based SEO strategies to empower our
+              clients.
+            </p>
+            <div class="footer__socials">
+              <a href="#" class="footer__social-link">
+                <img src="images/facebook-icon.svg" alt="Facebook" width="24" height="24" />
+              </a>
+              <a href="#" class="footer__social-link">
+                <img src="images/linkedin-icon.svg" alt="LinkedIn" width="24" height="24" />
+              </a>
+              <a href="#" class="footer__social-link">
+                <img src="images/twitter-icon.svg" alt="Twitter" width="24" height="24" />
+              </a>
+              <a href="#" class="footer__social-link">
+                <img src="images/instagram-icon.svg" alt="Instagram" width="24" height="24" />
+              </a>
+            </div>
+          </div>
+          <div class="footer__columns">
+            <div class="footer__column">
+              <h3 class="footer__title">COMPANY</h3>
+              <ul class="footer__links">
+                <li><a href="#" class="footer__link">About Us</a></li>
+                <li><a href="#" class="footer__link">Case Studies</a></li>
+                <li><a href="#" class="footer__link">Blog</a></li>
+                <li><a href="#" class="footer__link">Careers</a></li>
+                <li><a href="#" class="footer__link">Contacts</a></li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <h3 class="footer__title">SERVICES</h3>
+              <ul class="footer__links">
+                <li><a href="#" class="footer__link">Social Media</a></li>
+                <li><a href="#" class="footer__link">SEO</a></li>
+                <li><a href="#" class="footer__link">Research</a></li>
+                <li><a href="#" class="footer__link">Content & PR</a></li>
+                <li><a href="#" class="footer__link">Payed Traffic</a></li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <h3 class="footer__title">CONTACT US</h3>
+              <ul class="footer__links">
+                <li class="footer__contact">
+                  <img src="images/phone-icon.svg" alt="" class="footer__contact-icon" width="16" height="16" />
+                  <a href="tel:4055550128" class="footer__link">(405) 555-0128</a>
+                </li>
+                <li class="footer__contact">
+                  <img src="images/email-icon.svg" alt="" class="footer__contact-icon" width="16" height="16" />
+                  <a href="mailto:hello@createx.com" class="footer__link">hello@createx.com</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <h3 class="footer__title">SIGN UP TO OUR NEWSLETTER</h3>
+              <div class="footer__newsletter">
+                <input type="email" placeholder="Email address" class="footer__input" />
+                <button class="footer__submit-btn">
+                  <img src="images/arrow-right-white.svg" alt="" width="16" height="16" />
+                </button>
+              </div>
+              <p class="footer__newsletter-text">
+                *Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer__divider">
+          <img src="images/divider-line-footer.svg" alt="" class="footer__divider-image" />
+        </div>
+        <div class="footer__middle">
+          <div class="footer__partners">
+            <img src="images/clutch-logo.svg" alt="Clutch" class="footer__partner-logo" />
+            <img src="images/goodfirms-logo.svg" alt="GoodFirms" class="footer__partner-logo" />
+            <img src="images/google-partner-logo.svg" alt="Google Partner" class="footer__partner-logo" />
+            <img src="images/hubspot-logo.svg" alt="HubSpot" class="footer__partner-logo" />
+          </div>
+          <div class="footer__top-section">
+            <span class="footer__top-text">GO TO TOP</span>
+            <button class="footer__top-btn">
+              <img src="images/arrow-up.svg" alt="" class="footer__top-arrow" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom-bg">
+        <img src="images/footer-bottom-bg.svg" alt="" class="footer__bg-image" />
+        <div class="footer__container">
+          <div class="footer__copyright">
+            © All rights reserved. Made with
+            <img src="images/heart-icon.svg" alt="love" class="footer__heart" />
+            by Createx Studio
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <script type="module" src="/src/index.js"></script>
-    <p>Ghjdsghsjkfdghskd</p>
+    <p></p>
   </body>
 </html>

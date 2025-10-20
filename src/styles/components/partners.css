@@ -1,0 +1,41 @@
+.partners__container {
+  max-width: 1230px;
+  margin: 0 auto;
+}
+
+.partners {
+  background-color: var(--background-default);
+  padding: 80px 0;
+  height: 220px;
+  display: flex;
+  align-items: center;
+}
+
+.partners__grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 100px;
+}
+
+.partner-logo {
+  width: 120px;
+  height: 64px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.partner-logo-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.partner-cursor {
+  position: absolute;
+  top: 50px;
+  right: 35px;
+  width: 22px;
+  height: 21px;
+  z-index: 10;
+}

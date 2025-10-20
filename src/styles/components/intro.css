@@ -1,0 +1,124 @@
+.intro {
+  padding: 50px 0;
+  color: var(--text-inverse);
+  display: flex;
+  align-items: center;
+}
+
+.intro__content {
+  max-width: 810px;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.intro__location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.intro__home {
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.intro__home:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.intro__home-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.intro__arrow {
+  width: 16px;
+  height: 16px;
+  opacity: 0.6;
+}
+
+.intro__page {
+  font-size: 16px;
+  color: var(--text-inverse-60);
+  opacity: 0.8;
+}
+
+.intro__title {
+  font-size: 72px;
+  font-weight: 550;
+  margin-bottom: 32px;
+  color: var(--color-white);
+}
+
+.intro__description {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  color: var(--text-inverse-60);
+}
+
+.intro__actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.intro__button {
+  padding: 16px 40px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  background: transparent;
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 154px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro__button:hover {
+  background: var(--color-white);
+  color: var(--color-darker-blue);
+}
+
+.intro__contact {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.intro__contact-icon {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.intro__contact-info {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.intro__contact-label {
+  font-size: 14px;
+  color: var(--text-inverse-60);
+}
+
+.intro__contact-phone {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-inverse);
+  text-decoration: none;
+}

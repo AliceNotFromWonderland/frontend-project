@@ -1,6 +1,23 @@
-:root {
+.theme-dark {
   color-scheme: dark;
 
-  --color-primary: var(--color-black);
-  --color-secondary: var(--color-white);
+  /* Background */
+  --background-default: var(--color-dark-blue);
+  --background-secondary: var(--color-mild-blue);
+
+  /* Text */
+  --text-primary: var(--color-white);
+  --text-secondary: var(--color-gray);
+  --text-tertiary: var(--color-gray);
+  --text-inverse: var(--color-white);
+  --text-inverse-60: var(--color-white-60);
+
+  /* Primary accents */
+  --primary-default: var(--color-purple);
+  --primary-hover: var(--color-purple-hover);
+
+  /* Secondary accents */
+  --secondary-default: var(--color-blue);
+  --secondary-hover: var(--color-blue-hover);
+  --bg-secondary: var(--color-bg-secondary);
 }

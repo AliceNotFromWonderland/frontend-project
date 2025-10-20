@@ -1,6 +1,23 @@
-:root {
+.theme-light {
   color-scheme: light;
 
-  --color-primary: var(--color-white);
-  --color-secondary: var(--color-black);
+  /* Background */
+  --background-default: var(--color-white);
+  --background-secondary: var(--color-light-gray);
+
+  /* Text */
+  --text-primary: var(--color-darker-blue);
+  --text-secondary: var(--color-medium-gray);
+  --text-tertiary: var(--color-dark-gray);
+  --text-inverse: var(--color-white);
+  --text-inverse-60: var(--color-white-60);
+
+  /* Primary accents */
+  --primary-default: var(--color-purple);
+  --primary-hover: var(--color-purple-hover);
+
+  /* Secondary accents */
+  --secondary-default: var(--color-blue);
+  --secondary-hover: var(--color-blue-hover);
+  --bg-secondary: var(--color-bg-secondary);
 }
