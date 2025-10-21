@@ -1,18 +1,18 @@
-.latest-news-container {
-  max-width: 1230px;
-  margin: 0 auto;
-  padding: 0 15px;
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
-}
-
 .latest-news {
   background-color: var(--background-default);
   padding: 80px 0;
   min-height: 700px;
   display: flex;
   align-items: center;
+}
+
+.latest-news__container {
+  max-width: 1230px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
 
 .news-header {
