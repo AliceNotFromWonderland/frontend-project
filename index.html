@@ -23,7 +23,7 @@
       </div>
 
       <header class="header">
-        <div class="header__content">
+        <div class="container">
           <div class="header__left">
             <a href="#" class="header__logo">
               <img src="/images/logo.svg" alt="CREATEX" class="header__logo-image" />
@@ -64,7 +64,7 @@
       </header>
 
       <section class="intro">
-        <div class="intro__content">
+        <div class="container">
           <div class="intro__location">
             <a href="#" class="intro__home">
               <img src="/images/home-icon.svg" alt="Home" class="intro__home-icon" />
@@ -94,7 +94,7 @@
 
     <main>
       <section class="service-card">
-        <div class="service-card__container">
+        <div class="container">
           <div class="service-card__content">
             <h2 class="service-card__title">Social Media Marketing</h2>
             <p class="service-card__description">
@@ -116,7 +116,7 @@
       </section>
 
       <section class="service-card service-card--reverse">
-        <div class="service-card__container">
+        <div class="container">
           <div class="service-card__content">
             <h2 class="service-card__title">Search Engine Optimization</h2>
             <p class="service-card__description">
@@ -137,7 +137,7 @@
       </section>
 
       <section class="service-card">
-        <div class="service-card__container">
+        <div class="container">
           <div class="service-card__content">
             <h2 class="service-card__title">Research Service</h2>
             <p class="service-card__description">
@@ -160,7 +160,7 @@
         <div class="form-section__background">
           <img src="/images/form-bg.svg" alt="" class="form-section__bg-image" />
         </div>
-        <div class="form-section__container">
+        <div class="container">
           <div class="form-section__media">
             <img src="/images/form-image.svg" alt="SEO Analysis" class="form-section__image" />
           </div>
@@ -196,7 +196,7 @@
       </section>
 
       <section class="markets">
-        <div class="markets__container">
+        <div class="container">
           <h1 class="markets__title">Markets in which we operate</h1>
           <div class="markets__row">
             <div class="markets__item">
@@ -235,136 +235,233 @@
       </section>
 
       <section class="case-studies">
-        <div class="case-studies__container">
+        <div class="container">
           <div class="case-studies__header">
-            <h1>Read our clients' case studies</h1>
+            <h1 class="case-studies__title">Read our clients' case studies</h1>
             <div class="case-studies__controls">
               <button class="case-studies__arrow case-studies__arrow--left">
-                <img
-                  src="images/arrow-left-dark.svg"
-                  alt="Previous"
-                  class="case-studies__arrow-icon case-studies__arrow-icon--dark"
-                />
-                <img
-                  src="images/arrow-left-light.svg"
-                  alt="Previous"
-                  class="case-studies__arrow-icon case-studies__arrow-icon--light"
-                />
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M9.20711 17.2071C8.81658 17.5976 8.18342 17.5976 7.79289 17.2071L3.29289 12.7071C2.90237 12.3166 2.90237 11.6834 3.29289 11.2929L7.79289 6.79289C8.18342 6.40237 8.81658 6.40237 9.20711 6.79289C9.59763 7.18342 9.59763 7.81658 9.20711 8.20711L6.41421 11L20 11C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13L6.41421 13L9.20711 15.7929C9.59763 16.1834 9.59763 16.8166 9.20711 17.2071Z"
+                    fill="currentColor"
+                  />
+                </svg>
               </button>
               <button class="case-studies__arrow case-studies__arrow--right">
-                <img src="images/arrow-right-light.svg" alt="Next" class="case-studies__arrow-icon" />
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M14.7929 6.79289C15.1834 6.40237 15.8166 6.40237 16.2071 6.79289L20.7071 11.2929C21.0976 11.6834 21.0976 12.3166 20.7071 12.7071L16.2071 17.2071C15.8166 17.5976 15.1834 17.5976 14.7929 17.2071C14.4024 16.8166 14.4024 16.1834 14.7929 15.7929L17.5858 13H4C3.44772 13 3 12.5523 3 12C3 11.4477 3.44772 11 4 11H17.5858L14.7929 8.20711C14.4024 7.81658 14.4024 7.18342 14.7929 6.79289Z"
+                    fill="white"
+                  />
+                </svg>
               </button>
             </div>
           </div>
+
           <div class="case-studies__grid">
-            <div class="case-study-card">
-              <img src="images/case-national.png" alt="NATIONAL case study" class="case-study-card__image" />
+            <!-- Карточка 1 -->
+            <div class="case-studies__card">
+              <div class="case-studies__card-content">
+                <div class="case-studies__card-header">
+                  <div class="case-studies__card-logo">
+                    <img src="images/national-logo.svg" alt="NATIONAL logo" class="case-studies__card-logo-image" />
+                  </div>
+                  <p class="case-studies__card-subtitle">Charity organisation</p>
+                </div>
+                <img src="images/divider-line2.svg" alt="" class="case-studies__divider" />
+                <div class="case-studies__card-description">
+                  <p>Createx SEO Agency helped National Inc. increase their MQL to SQL conversion rate by 300%.</p>
+                </div>
+                <div class="case-studies__card-metrics">
+                  <div class="case-studies__metric">
+                    <img src="images/metric-icon-1.svg" alt="" class="case-studies__metric-icon" />
+                    <div class="case-studies__metric-content">
+                      <div class="case-studies__metric-value">90%</div>
+                      <div class="case-studies__metric-label">Engagement</div>
+                    </div>
+                  </div>
+                  <div class="case-studies__metric">
+                    <img src="images/metric-icon-2.svg" alt="" class="case-studies__metric-icon" />
+                    <div class="case-studies__metric-content">
+                      <div class="case-studies__metric-value">100%</div>
+                      <div class="case-studies__metric-label">Deliverability</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="case-study-card">
-              <img
-                src="images/case-oil.png"
-                alt="Oil and natural resources case study"
-                class="case-study-card__image"
-              />
+
+            <!-- Карточка 2 -->
+            <div class="case-studies__card case-studies__card--inverse">
+              <div class="case-studies__card-background">
+                <img src="images/delmar-bg.svg" alt="" class="case-studies__card-bg-image" />
+                <img src="images/delmar-overlay.svg" alt="" class="case-studies__card-overlay" />
+              </div>
+              <div class="case-studies__card-content">
+                <div class="case-studies__card-header">
+                  <div class="case-studies__card-logo">
+                    <img src="images/delmar-logo.svg" alt="Del Mar logo" class="case-studies__card-logo-image" />
+                  </div>
+                  <p class="case-studies__card-subtitle">Oil and natural resources</p>
+                </div>
+                <img src="images/divider-line2.svg" alt="" class="case-studies__divider" />
+
+                <div class="case-studies__card-description">
+                  <p>
+                    With an advanced A/B testing and usability analysis, Createx SEO Agency helps Del Mar see a 400%
+                    increase in conversion rate.
+                  </p>
+                </div>
+                <div class="case-studies__card-metrics">
+                  <div class="case-studies__metric">
+                    <img src="images/metric-icon-3.svg" alt="" class="case-studies__metric-icon" />
+                    <div class="case-studies__metric-content">
+                      <div class="case-studies__metric-value">200%</div>
+                      <div class="case-studies__metric-label">Growth in sales</div>
+                    </div>
+                  </div>
+                  <div class="case-studies__metric">
+                    <div class="case-studies__metric-content">
+                      <div class="case-studies__metric-value">1,400</div>
+                      <div class="case-studies__metric-label">Target investors</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="case-study-card">
-              <img src="images/case-personal-care.png" alt="Personal care case study" class="case-study-card__image" />
+
+            <!-- Карточка 3 -->
+            <div class="case-studies__card">
+              <div class="case-studies__card-content">
+                <div class="case-studies__card-header">
+                  <div class="case-studies__card-logo">
+                    <img src="images/personal-logo.svg" alt="NATIONAL logo" class="case-studies__card-logo-image" />
+                  </div>
+                  <p class="case-studies__card-subtitle">Personal care</p>
+                </div>
+                <img src="images/divider-line2.svg" alt="" class="case-studies__divider" />
+                <div class="case-studies__card-description">
+                  <p>
+                    We helped Sunset company break through a noisy industry and better understand their buyer's journey.
+                  </p>
+                </div>
+                <div class="case-studies__card-metrics">
+                  <div class="case-studies__metric">
+                    <img src="images/metric-icon-5.svg" alt="" class="case-studies__metric-icon" />
+                    <div class="case-studies__metric-content">
+                      <div class="case-studies__metric-value">70%</div>
+                      <div class="case-studies__metric-label">Engagement</div>
+                    </div>
+                  </div>
+                  <div class="case-studies__metric">
+                    <img src="images/metric-icon-6.svg" alt="" class="case-studies__metric-icon" />
+                    <div class="case-studies__metric-content">
+                      <div class="case-studies__metric-value">200%</div>
+                      <div class="case-studies__metric-label">Deliverability</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+
           <div class="case-studies__footer">
             <h3 class="case-studies__footer-title">Explore more case studies</h3>
-            <button class="button studies__button">View all case studies</button>
+            <button class="button case-studies__button">View all case studies</button>
           </div>
         </div>
       </section>
 
       <section class="partners">
-        <div class="partners__container">
+        <div class="container">
           <div class="partners__grid">
             <img src="images/partner-1.svg" alt="Partner 1" class="partner-logo" />
             <img src="images/partner-2.svg" alt="Partner 2" class="partner-logo" />
             <img src="images/partner-3.svg" alt="Partner 3" class="partner-logo" />
             <img src="images/partner-4.svg" alt="Partner 4" class="partner-logo" />
             <img src="images/partner-5.svg" alt="Partner 5" class="partner-logo" />
-            <div class="partner-logo-wrapper">
-              <img src="images/partner-6.svg" alt="Partner 6" class="partner-logo" />
-              <img src="images/cursor-arrow.svg" alt="" class="partner-cursor" />
-            </div>
+            <img src="images/partner-6.svg" alt="Partner 6" class="partner-logo" />
           </div>
         </div>
       </section>
 
       <section class="latest-news">
-        <div class="latest-news__container">
-          <div class="news-header">
-            <h1>Latest news</h1>
-            <p class="news-subtitle">Check more posts in our blog for featured news and advertising insights</p>
-            <button class="button news__button">Go to blog</button>
+        <div class="container">
+          <div class="latest-news__header">
+            <h1 class="latest-news__title">Latest news</h1>
+            <p class="latest-news__subtitle">Check more posts in our blog for featured news and advertising insights</p>
+            <button class="button latest-news__button">Go to blog</button>
           </div>
+          <div class="latest-news__cards-wrapper">
+            <article class="latest-news__card">
+              <img
+                src="images/news-1.svg"
+                alt="How to Maximize Your ROI Through Scientific SEM?"
+                class="latest-news__card-image"
+                width="390"
+                height="300"
+              />
+              <div class="latest-news__card-meta">
+                <span class="latest-news__card-category">SEO</span>
+                <span class="latest-news__card-date">
+                  <img src="images/calendar-icon.svg" alt="" class="latest-news__card-icon" />
+                  July 5, 2020
+                </span>
+                <span class="latest-news__card-author">
+                  <img src="images/user-icon.svg" alt="" class="latest-news__card-icon" />
+                  By Diane McCoy
+                </span>
+              </div>
+              <h3 class="latest-news__card-title">How to Maximize Your ROI Through Scientific SEM?</h3>
+              <p class="latest-news__card-excerpt">
+                Vulputate vitae pellentesque scelerisque luctus consequat mattis pellentesque dui odio...
+              </p>
+              <a href="#" class="latest-news__card-link">
+                Read more
+                <img src="images/arrow-right.svg" alt="" class="latest-news__card-arrow" />
+              </a>
+            </article>
 
-          <article class="news-card">
-            <img
-              src="images/news-1.svg"
-              alt="How to Maximize Your ROI Through Scientific SEM?"
-              class="news-card__image"
-              width="390"
-              height="300"
-            />
-            <div class="news-card__meta">
-              <span class="news-category">SEO</span>
-              <span class="news-date">
-                <img src="images/calendar-icon.svg" alt="" class="meta-icon" />
-                July 5, 2020
-              </span>
-              <span class="news-author">
-                <img src="images/user-icon.svg" alt="" class="meta-icon" />
-                By Diane McCoy
-              </span>
-            </div>
-            <h3 class="news-card__title">How to Maximize Your ROI Through Scientific SEM?</h3>
-            <p class="news-card__excerpt">
-              Vulputate vitae pellentesque scelerisque luctus consequat mattis pellentesque dui odio...
-            </p>
-            <a href="#" class="news-card__link">
-              Read more
-              <img src="images/arrow-right.svg" alt="" class="news-card__arrow" />
-            </a>
-          </article>
-
-          <article class="news-card">
-            <img
-              src="images/news-2.svg"
-              alt="The Basics of Blogging Search Engine Optimization."
-              class="news-card__image"
-              width="390"
-              height="300"
-            />
-            <div class="news-card__meta">
-              <span class="news-category">Marketing</span>
-              <span class="news-date">
-                <img src="images/calendar-icon.svg" alt="" class="meta-icon" />
-                July 5, 2020
-              </span>
-              <span class="news-author">
-                <img src="images/user-icon.svg" alt="" class="meta-icon" />
-                By Diane McCoy
-              </span>
-            </div>
-            <h3 class="news-card__title">The Basics of Blogging Search Engine Optimization.</h3>
-            <p class="news-card__excerpt">
-              Mauris tincidunt sollicitudin tristique odio eget volutpat. Fringilla viverra amet, mi interdum blandit...
-            </p>
-            <a href="#" class="news-card__link">
-              Read more
-              <img src="images/arrow-right.svg" alt="" class="news-card__arrow" />
-            </a>
-          </article>
+            <article class="latest-news__card">
+              <img
+                src="images/news-2.svg"
+                alt="The Basics of Blogging Search Engine Optimization."
+                class="latest-news__card-image"
+                width="390"
+                height="300"
+              />
+              <div class="latest-news__card-meta">
+                <span class="latest-news__card-category">Marketing</span>
+                <span class="latest-news__card-date">
+                  <img src="images/calendar-icon.svg" alt="" class="latest-news__card-icon" />
+                  July 5, 2020
+                </span>
+                <span class="latest-news__card-author">
+                  <img src="images/user-icon.svg" alt="" class="latest-news__card-icon" />
+                  By Diane McCoy
+                </span>
+              </div>
+              <h3 class="latest-news__card-title">The Basics of Blogging Search Engine Optimization.</h3>
+              <p class="latest-news__card-excerpt">
+                Mauris tincidunt sollicitudin tristique odio eget volutpat. Fringilla viverra amet, mi interdum
+                blandit...
+              </p>
+              <a href="#" class="latest-news__card-link">
+                Read more
+                <img src="images/arrow-right.svg" alt="" class="latest-news__card-arrow" />
+              </a>
+            </article>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="footer__container">
+      <div class="container">
         <div class="footer__main">
           <div class="footer__about">
             <img src="images/logo.svg" alt="CREATEX" class="footer__logo" width="130" height="22" />
@@ -374,44 +471,47 @@
               clients.
             </p>
             <div class="footer__socials">
-              <a href="#" class="footer__social-link">
-                <img src="images/facebook-icon.svg" alt="Facebook" width="24" height="24" />
-              </a>
-              <a href="#" class="footer__social-link">
-                <img src="images/linkedin-icon.svg" alt="LinkedIn" width="24" height="24" />
-              </a>
-              <a href="#" class="footer__social-link">
-                <img src="images/twitter-icon.svg" alt="Twitter" width="24" height="24" />
-              </a>
-              <a href="#" class="footer__social-link">
-                <img src="images/instagram-icon.svg" alt="Instagram" width="24" height="24" />
-              </a>
+              <a href="#" class="footer__social"
+                ><img src="images/facebook-icon.svg" alt="Facebook" width="24" height="24"
+              /></a>
+              <a href="#" class="footer__social"
+                ><img src="images/linkedin-icon.svg" alt="LinkedIn" width="24" height="24"
+              /></a>
+              <a href="#" class="footer__social"
+                ><img src="images/twitter-icon.svg" alt="Twitter" width="24" height="24"
+              /></a>
+              <a href="#" class="footer__social"
+                ><img src="images/instagram-icon.svg" alt="Instagram" width="24" height="24"
+              /></a>
             </div>
           </div>
+
           <div class="footer__columns">
             <div class="footer__column">
               <h3 class="footer__title">COMPANY</h3>
-              <ul class="footer__links">
-                <li><a href="#" class="footer__link">About Us</a></li>
-                <li><a href="#" class="footer__link">Case Studies</a></li>
-                <li><a href="#" class="footer__link">Blog</a></li>
-                <li><a href="#" class="footer__link">Careers</a></li>
-                <li><a href="#" class="footer__link">Contacts</a></li>
+              <ul class="footer__list">
+                <li class="footer__item"><a href="#" class="footer__link">About Us</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Case Studies</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Blog</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Careers</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Contacts</a></li>
               </ul>
             </div>
+
             <div class="footer__column">
               <h3 class="footer__title">SERVICES</h3>
-              <ul class="footer__links">
-                <li><a href="#" class="footer__link">Social Media</a></li>
-                <li><a href="#" class="footer__link">SEO</a></li>
-                <li><a href="#" class="footer__link">Research</a></li>
-                <li><a href="#" class="footer__link">Content & PR</a></li>
-                <li><a href="#" class="footer__link">Payed Traffic</a></li>
+              <ul class="footer__list">
+                <li class="footer__item"><a href="#" class="footer__link">Social Media</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">SEO</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Research</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Content & PR</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Payed Traffic</a></li>
               </ul>
             </div>
+
             <div class="footer__column">
               <h3 class="footer__title">CONTACT US</h3>
-              <ul class="footer__links">
+              <ul class="footer__list">
                 <li class="footer__contact">
                   <img src="images/phone-icon.svg" alt="" class="footer__contact-icon" width="16" height="16" />
                   <a href="tel:4055550128" class="footer__link">(405) 555-0128</a>
@@ -422,41 +522,45 @@
                 </li>
               </ul>
             </div>
+
             <div class="footer__column">
               <h3 class="footer__title">SIGN UP TO OUR NEWSLETTER</h3>
               <div class="footer__newsletter">
                 <input type="email" placeholder="Email address" class="footer__input" />
-                <button class="footer__submit-btn">
-                  <img src="images/arrow-right-white.svg" alt="" width="16" height="16" />
+                <button class="footer__submit">
+                  <img src="images/arrow-right-white.svg" alt="" class="footer__submit-icon" width="16" height="16" />
                 </button>
               </div>
-              <p class="footer__newsletter-text">
+              <p class="footer__newsletter-note">
                 *Subscribe to our newsletter to receive communications and early updates from Createx SEO Agency.
               </p>
             </div>
           </div>
         </div>
+
         <div class="footer__divider">
-          <img src="images/divider-line-footer.svg" alt="" class="footer__divider-image" />
+          <img src="images/divider-line-footer.svg" alt="" class="footer__divider-line" />
         </div>
+
         <div class="footer__middle">
           <div class="footer__partners">
-            <img src="images/clutch-logo.svg" alt="Clutch" class="footer__partner-logo" />
-            <img src="images/goodfirms-logo.svg" alt="GoodFirms" class="footer__partner-logo" />
-            <img src="images/google-partner-logo.svg" alt="Google Partner" class="footer__partner-logo" />
-            <img src="images/hubspot-logo.svg" alt="HubSpot" class="footer__partner-logo" />
+            <img src="images/clutch-logo.svg" alt="Clutch" class="footer__partner" />
+            <img src="images/goodfirms-logo.svg" alt="GoodFirms" class="footer__partner" />
+            <img src="images/google-partner-logo.svg" alt="Google Partner" class="footer__partner" />
+            <img src="images/hubspot-logo.svg" alt="HubSpot" class="footer__partner" />
           </div>
-          <div class="footer__top-section">
+          <div class="footer__top">
             <span class="footer__top-text">GO TO TOP</span>
-            <button class="footer__top-btn">
-              <img src="images/arrow-up.svg" alt="" class="footer__top-arrow" />
+            <button class="footer__top-button">
+              <img src="images/arrow-up.svg" alt="" class="footer__top-icon" />
             </button>
           </div>
         </div>
       </div>
-      <div class="footer__bottom-bg">
-        <img src="images/footer-bottom-bg.svg" alt="" class="footer__bg-image" />
-        <div class="footer__container">
+
+      <div class="footer__bottom">
+        <img src="images/footer-bottom-bg.svg" alt="" class="footer__bottom-bg" />
+        <div class="container">
           <div class="footer__copyright">
             © All rights reserved. Made with
             <img src="images/heart-icon.svg" alt="love" class="footer__heart" />

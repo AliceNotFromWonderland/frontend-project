@@ -1,8 +1,9 @@
 export default {
   plugins: {
-    autoprefixer: {},
-    'postcss-nesting': {},
+    'postcss-import': {},
     'postcss-custom-media': {},
     '@csstools/postcss-media-minmax': {},
+    'postcss-nesting': {},
+    autoprefixer: {},
   },
 };
